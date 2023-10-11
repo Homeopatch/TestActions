@@ -1,0 +1,12 @@
+name: Gitea Actions Demo
+run-name: ${{ gitea.actor }} is testing out Gitea Actions 🚀
+on: [push]
+
+jobs:
+  Explore-Gitea-Actions:
+    runs-on: ubuntu
+    steps:
+      - run: node -v
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - run: ls -la ${{ gitea.workspace }}
