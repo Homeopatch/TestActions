@@ -8,4 +8,4 @@ jobs:
     container:
       image: python:latest
     steps:
-      - run: python -v
+      - run: python --version
